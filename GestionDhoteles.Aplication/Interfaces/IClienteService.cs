@@ -3,7 +3,7 @@ using GestionDhotelesPercistence.Base;
 
 namespace GestionDhoteles.Aplication.Interfaces
 {
-    public interface IDepartmenService : IBaseService
+    public interface IClienteService : IBaseService
     {
        
     }
