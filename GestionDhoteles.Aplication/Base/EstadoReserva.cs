@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace GestionDhoteles.Aplication.Base
 {
-    public interface IBaseService
+    public enum EstadoReserva
     {
+        Confirmada = 1,
+        En_Espera = 2,
+        Cancelada = 3
     }
 }

@@ -20,6 +20,10 @@ namespace GestionDhoteles.Domain.Entities
         public string? Correo { get; set; }
         public bool? Estado { get; set; }
         public DateTime? FechaCreacion { get; set; }
-
+        public object UsuarioMod { get; set; }
+        public object FechaModificacion { get; set; }
+        public object EstadoYFecha { get; set; }
+        public bool Borrado { get; set; }
+        public int CreadorPorU { get; set; }
     }
 }

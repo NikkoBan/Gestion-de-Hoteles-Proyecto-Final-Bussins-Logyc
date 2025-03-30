@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionDhoteles.Aplication.Dtos
+namespace GestionDhoteles.Aplication.Dtos.TarifasServiceDto
 {
-    internal class ClienteServiceDtos
+    public class SaveTarifasSDto : TarifasSDto
     {
     }
 }

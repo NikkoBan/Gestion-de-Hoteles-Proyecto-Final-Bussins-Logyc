@@ -12,4 +12,9 @@ namespace GestionDhoteles.Aplication.Dtos
         Task<OperationResult> Remove(TDtoRemove dto);
         Task<OperationResult> Save(TDtoSave dto);
     }
+    public class DtoBase
+    {
+        public DateTime Fecha { get; set; }
+        public int Usuario { get; set; }
+    }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionDhoteles.Aplication.Services
+namespace GestionDhoteles.Aplication.Dtos.HabitacionServiceDto
 {
-    public class AppService
+    public class SaveHabitacionSDto : HabitacionSDto
     {
     }
 }

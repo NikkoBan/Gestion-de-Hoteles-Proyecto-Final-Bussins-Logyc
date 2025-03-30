@@ -16,7 +16,7 @@ namespace GetionDhoteles.Api.Controllers
             _tarifaRepository = tarifaRepository;
         }
 
-        // Obtener todas las tarifas
+
         [HttpGet("GetAllTarifas")]
         public async Task<IActionResult> GetAllTarifas()
         {
@@ -24,7 +24,7 @@ namespace GetionDhoteles.Api.Controllers
             return Ok(tarifas);
         }
 
-        // Obtener todas las tarifas con un filtro
+
         [HttpGet("GetAllTarifasFiltered")]
         public async Task<IActionResult> GetAllTarifasFiltered([FromQuery] string filter)
         {
@@ -33,7 +33,6 @@ namespace GetionDhoteles.Api.Controllers
             return Ok(result.Data);
         }
 
-        // Obtener una tarifa por ID
         [HttpGet("GetTarifaById/{id}")]
         public async Task<IActionResult> GetTarifaById(int id)
         {
@@ -44,7 +43,7 @@ namespace GetionDhoteles.Api.Controllers
             return Ok(tarifa);
         }
 
-        // Guardar una nueva tarifa
+
         [HttpPost("SaveTarifa")]
         public async Task<IActionResult> SaveTarifa([FromBody] Tarifa tarifa)
         {
@@ -58,7 +57,7 @@ namespace GetionDhoteles.Api.Controllers
             return CreatedAtAction(nameof(GetTarifaById), new { id = tarifa.id }, tarifa);
         }
 
-        // Actualizar una tarifa existente
+     
         [HttpPut("UpdateTarifa/{id}")]
         public async Task<IActionResult> UpdateTarifa(int id, [FromBody] Tarifa tarifa)
         {
@@ -76,7 +75,6 @@ namespace GetionDhoteles.Api.Controllers
             return NoContent();
         }
 
-        // Eliminar una tarifa (Deshabilitarla)
         [HttpDelete("DeleteTarifa/{id}")]
         public async Task<IActionResult> DeleteTarifa(int id)
         {
@@ -91,7 +89,6 @@ namespace GetionDhoteles.Api.Controllers
             return NoContent();
         }
 
-        // Verificar si una tarifa existe por ID
         [HttpGet("ExistsTarifa/{id}")]
         public async Task<IActionResult> ExistsTarifa(int id)
         {

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionDhoteles.Aplication.Services
+namespace GestionDhoteles.Aplication.Dtos.PisoServiceDto
 {
-    public class AppService
+    public class RemovePisoSDto : DtoBase
     {
+        public int Id { get; set; }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionDhoteles.Aplication.Services
+namespace GestionDhoteles.Aplication.Dtos.RolUsuarioServiceDtos
 {
-    public class AppService
+    public class SaveRolUsuarioSDtos : RolUsuarioSDtos
     {
     }
 }

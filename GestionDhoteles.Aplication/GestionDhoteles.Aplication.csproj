@@ -15,4 +15,8 @@
     <ProjectReference Include="..\GestionDhotelesPercistence\GestionDhotelesPercistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Mappers\Services\" />
+  </ItemGroup>
+
 </Project>
